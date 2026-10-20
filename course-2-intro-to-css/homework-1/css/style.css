@@ -55,6 +55,8 @@ footer {
 li {
   display: inline-block;
   width: 30%;
+  text-align: center;
+  line-height: 100%;
 }
 
 h1 {
