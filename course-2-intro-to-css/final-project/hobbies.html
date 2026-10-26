@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
+
+    <header>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">CSS Grid</a></li>
+          <li>
+            <a href="hobbies.html" class="active" aria-current="page"
+              >CSS Flex</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section>
+        <h2>This is an example of CSS Flex</h2>
+        <p>
+          In my free time, I love balancing quiet moments like sipping iced
+          coffee or playing with cats with outdoor activities and trips with
+          friends. This page utilizes <strong>CSS Flexbox</strong> (<code
+            >display: flex</code
+          >, <code>flex-wrap: wrap</code>, and
+          <code>justify-content: space-around</code>) for flexible card
+          alignment.
+        </p>
+        <p>
+          Notice how every image alternates its corner styling using the
+          <strong><code>:nth-child</code> pseudo-class</strong>! Even-numbered
+          cards feature smooth top-left/bottom-right leaf curves with a green
+          border, while odd-numbered cards feature inverted curves with an
+          orange accent border.
+        </p>
+
+        <!-- Flexbox Container with Alternating :nth-child Styling (Requirement 5, 7, 8, 9) -->
+        <div class="flex-gallery">
+          <div class="flex-item">
+            <img
+              src="images/coffee.jpg"
+              alt="Cold iced brew coffee on a wooden table at Capital Coffee"
+            />
+            <p class="caption">
+              <strong>Hobby 1: Coffee Culture</strong> — Finding peaceful spaces
+              to read and recharge.
+            </p>
+          </div>
+
+          <div class="flex-item">
+            <img
+              src="images/cat.jpg"
+              alt="Sleeping calico cat curled up on a warm spot"
+            />
+            <p class="caption">
+              <strong>Hobby 2: Cat Care</strong> — Spending time petting and
+              taking care of lovely feline friends.
+            </p>
+          </div>
+
+          <div class="flex-item">
+            <img
+              src="images/zoo.jpg"
+              alt="Scenic pathway through the green trees and animal enclosures at the zoo"
+            />
+            <p class="caption">
+              <strong>Hobby 3: Weekend Walks</strong> — Exploring nature parks
+              and visiting the city zoo.
+            </p>
+          </div>
+
+          <div class="flex-item">
+            <img
+              src="images/event.jpg"
+              alt="Vibrant atmosphere of students and guests participating in outdoor activities"
+            />
+            <p class="caption">
+              <strong>Hobby 4: Community Events</strong> — Engaging in campus
+              festivals and outdoor sports.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>CSS Techniques Demonstrated</h2>
+        <ul class="features">
+          <li>
+            <strong>Flexbox Distribution:</strong> Cards flex responsively
+            across rows via <code>display: flex</code> and
+            <code>flex-wrap: wrap</code>.
+          </li>
+          <li>
+            <strong>Advanced <code>:nth-child</code> Selectors:</strong>
+            <code>:nth-child(even)</code> and <code>:nth-child(odd)</code> give
+            each consecutive image an artistic, alternating leaf-shaped
+            border-radius and unique border color.
+          </li>
+          <li>
+            <strong>Box Model:</strong> Every image applies <code>border</code>,
+            <code>padding</code>, and custom <code>border-radius</code>.
+          </li>
+          <li>
+            <strong>Interactive Transitions:</strong> Smooth zoom and shadow
+            expansion on <code>:hover</code>.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made by Phú</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
+
+    <header>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="gallery.html" class="active" aria-current="page"
+              >CSS Grid</a
+            >
+          </li>
+          <li><a href="hobbies.html">CSS Flex</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section>
+        <h2>This is an example of CSS Grid</h2>
+        <p>
+          Welcome to my photo gallery! This page displays my favorite personal
+          snapshots arranged using a
+          <strong>two-column CSS Grid</strong> layout (<code
+            >grid-template-columns: repeat(2, 1fr)</code
+          >). All images are styled using the
+          <strong>CSS Box Model</strong> (with custom border, padding, and
+          border-radius) and feature an interactive
+          <strong>hover transition</strong>.
+        </p>
+
+        <!-- 2-Column Grid Container with 5 distinct images (Requirement 1, 5, 6, 8) -->
+        <div class="grid-gallery">
+          <div class="grid-item">
+            <img
+              src="images/cat.jpg"
+              alt="Calico cat relaxing on a warm sunny morning"
+            />
+            <p class="caption">Cute cat resting peacefully at my workplace</p>
+          </div>
+
+          <div class="grid-item">
+            <img
+              src="images/coffee.jpg"
+              alt="Cup of freshly brewed iced coffee at Capital Coffee shop"
+            />
+            <p class="caption">
+              Relaxing with a cup of coffee at Capital Coffee
+            </p>
+          </div>
+
+          <div class="grid-item">
+            <img
+              src="images/event.jpg"
+              alt="Crowd gathered outdoors on a bright day for a campus cultural event"
+            />
+            <p class="caption">
+              Attending a memorable outdoor university event
+            </p>
+          </div>
+
+          <div class="grid-item">
+            <img
+              src="images/training.jpg"
+              alt="Students lined up in formation during concentrated military training"
+            />
+            <p class="caption">
+              Discipline and teamwork during military education
+            </p>
+          </div>
+
+          <div class="grid-item">
+            <img
+              src="images/zoo.jpg"
+              alt="Lush green paths and trees during a weekend visit to the zoo"
+            />
+            <p class="caption">
+              Exploring wildlife and nature at the zoo with friends
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Grid Layout Highlights</h2>
+        <ul class="features">
+          <li>
+            <strong>Two Equal Columns:</strong> Configured via
+            <code>grid-template-columns: repeat(2, 1fr)</code>.
+          </li>
+          <li>
+            <strong>Consistent Gap:</strong> Clean <code>24px</code> spacing
+            between all grid cards.
+          </li>
+          <li>
+            <strong>Responsive:</strong> On smaller mobile screens, the grid
+            smoothly collapses into a single column.
+          </li>
+          <li>
+            <strong>Interactive Hover:</strong> Hovering over any image
+            initiates a gentle scale zoom with shadow depth.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made by Phú</p>
+    </footer>
+  </body>
+</html>
