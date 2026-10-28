@@ -1,7 +1,3 @@
-/* ==========================================================================
-   Base Styles & Typography
-   ========================================================================== */
-
 * {
   box-sizing: border-box;
 }
@@ -12,71 +8,77 @@ body {
     Cantarell, "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  color: #2d3748;
-  background-color: #f7fafc;
+  color: #1e293b;
+  background-color: #f1f5f9;
   margin: 0;
   padding: 0;
 }
 
-/* ==========================================================================
-   Skip to Main Content Link (Requirement 3: position & :focus pseudo-class)
-   ========================================================================== */
-
-.skip-link {
+.skip-link,
+.skip,
+a.skip-link,
+a.skip {
   position: absolute;
-  top: -100px;
-  left: 12px;
-  background-color: #1a365d;
-  color: #ffffff;
-  padding: 10px 18px;
-  font-size: 1rem;
-  font-weight: bold;
+  left: -10000px;
+  top: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus,
+.skip:focus,
+a.skip-link:focus,
+a.skip:focus {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  background-color: #0c2340;
+  color: #ffbf00;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 700;
   text-decoration: none;
-  border-radius: 6px;
-  border: 2px solid #f6ad55;
-  z-index: 1000;
-  transition: top 0.25s ease-in-out;
+  border: 3px solid #ffbf00;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  z-index: 10000;
 }
-
-.skip-link:focus {
-  top: 12px;
-  outline: 3px solid #ed8936;
-}
-
-/* ==========================================================================
-   Header & Navigation (Requirement 4 & 7: Navigation styling with Flexbox)
-   ========================================================================== */
 
 header {
-  background-color: #ebf8ff;
-  border-bottom: 3px solid #3182ce;
-  padding: 24px 20px 16px;
+  background: linear-gradient(180deg, #dbeafe 0%, #eff6ff 100%);
+  border-bottom: 4px solid #1e3a8a;
+  padding: 24px 20px 20px;
   text-align: center;
 }
 
 header h1 {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.2rem;
-  color: #1a365d;
-  margin: 12px 0 16px;
+  font-size: 2.3rem;
+  color: #0f172a;
+  margin: 10px 0 16px;
 }
 
 nav {
-  background-color: #2b6cb0;
-  border-radius: 8px;
-  padding: 10px 16px;
-  max-width: 900px;
-  margin: 0 auto 10px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+  border: 2px solid #3b82f6;
+  border-radius: 12px;
+  padding: 12px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.15);
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   margin: 0;
   padding: 0;
 }
@@ -86,49 +88,50 @@ nav li {
 }
 
 nav a {
-  color: #ffffff;
+  display: inline-block;
+  color: #f8fafc;
   text-decoration: none;
   font-weight: 600;
-  padding: 8px 18px;
-  border-radius: 6px;
-  display: inline-block;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
 }
 
 nav a:hover,
 nav a:focus {
-  background-color: #1a365d;
-  color: #fef08a;
-  outline: 2px solid #fef08a;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border-color: #93c5fd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
+  outline: none;
 }
 
 nav a.active {
-  background-color: #1a365d;
-  color: #fef08a;
-  border-bottom: 2px solid #f6ad55;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: 1px solid #93c5fd;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* ==========================================================================
-   Main Content & Section Layout
-   ========================================================================== */
-
 main {
-  max-width: 960px;
-  margin: 24px auto;
-  padding: 24px 20px;
+  max-width: 980px;
+  margin: 28px auto;
+  padding: 28px 24px;
   background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
 
 h2 {
   font-family: Georgia, "Times New Roman", serif;
-  color: #2b6cb0;
+  color: #1e3a8a;
   border-bottom: 2px solid #e2e8f0;
-  padding-bottom: 8px;
-  margin-top: 28px;
+  padding-bottom: 10px;
+  margin-top: 24px;
   margin-bottom: 16px;
 }
 
@@ -136,69 +139,63 @@ p {
   margin-bottom: 16px;
 }
 
-/* ==========================================================================
-   Images & Box Model (Requirement 5: border, padding, border-radius)
-   ========================================================================== */
-
 img {
   box-sizing: border-box;
-  border: 4px solid #cbd5e0;
-  padding: 6px;
-  border-radius: 12px;
+  border: 5px solid #1e3a8a;
+  padding: 8px;
+  border-radius: 16px;
   background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
-/* Featured image on Home page */
 .featured-image-wrapper {
-  max-width: 480px;
-  margin: 20px auto;
+  max-width: 520px;
+  margin: 24px auto;
   text-align: center;
 }
 
 .featured-image-wrapper img {
   width: 100%;
-  border-color: #3182ce;
+  height: 320px;
+  object-fit: cover;
 }
 
 .caption {
   font-size: 0.95rem;
-  color: #4a5568;
+  color: #475569;
   font-style: italic;
-  margin-top: 8px;
+  margin-top: 10px;
   text-align: center;
 }
-
-/* ==========================================================================
-   Grid Layout (Requirement 6: at least 2 columns)
-   ========================================================================== */
 
 .grid-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
-  align-items: start;
+  row-gap: 24px;
+  column-gap: 24px;
+  justify-items: center;
+  align-items: stretch;
+  grid-auto-rows: auto;
   margin: 24px 0;
 }
 
 .grid-item {
-  background-color: #edf2f7;
-  padding: 14px;
-  border-radius: 10px;
-  border: 1px solid #e2e8f0;
+  width: 100%;
+  background-color: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
 }
 
 .grid-item img {
   width: 100%;
-  height: 240px;
+  height: 250px;
   object-fit: cover;
 }
-
-/* ==========================================================================
-   Flexbox Layout (Requirement 7: flex property on parent container)
-   ========================================================================== */
 
 .flex-gallery {
   display: flex;
@@ -211,22 +208,18 @@ img {
 
 .flex-item {
   flex: 1 1 280px;
-  max-width: 420px;
-  background-color: #f7fafc;
+  max-width: 440px;
+  background-color: #f8fafc;
   padding: 16px;
-  border-radius: 10px;
-  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
 }
 
 .flex-item img {
   width: 100%;
-  height: 230px;
+  height: 240px;
   object-fit: cover;
 }
-
-/* ==========================================================================
-   Interactive Hover Transition (Requirement 8: :hover + interesting transition)
-   ========================================================================== */
 
 .grid-item img,
 .flex-item img,
@@ -234,57 +227,44 @@ img {
   transition:
     transform 0.35s ease,
     box-shadow 0.35s ease,
-    border-color 0.35s ease;
+    border-color 0.35s ease,
+    border-radius 0.35s ease;
 }
 
 .grid-item img:hover,
 .flex-item img:hover,
 .featured-image-wrapper img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  border-color: #3182ce;
+  transform: scale(1.06) rotate(1.5deg);
+  border-color: #d97706;
+  border-radius: 24px;
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.25);
   cursor: pointer;
 }
 
-/* ==========================================================================
-   nth-child Selector (Requirement 9: advanced pseudo-class styling)
-   ========================================================================== */
-
-/* Alternating border-radius and border styling for flex gallery items */
 .flex-gallery .flex-item:nth-child(even) img {
-  border-radius: 36px 4px 36px 4px;
-  border-color: #38a169;
+  border-radius: 36px 8px 36px 8px;
+  border-color: #15803d;
 }
 
 .flex-gallery .flex-item:nth-child(odd) img {
-  border-radius: 4px 36px 4px 36px;
-  border-color: #dd6b20;
+  border-radius: 8px 36px 8px 36px;
+  border-color: #c2410c;
 }
 
-/* ==========================================================================
-   Lists & Cards
-   ========================================================================== */
-
-ul.features,
-ol.devices {
+ul.features {
   padding-left: 24px;
   margin-bottom: 20px;
 }
 
-ul.features li,
-ol.devices li {
-  margin-bottom: 8px;
+ul.features li {
+  margin-bottom: 10px;
 }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-
 footer {
-  background-color: #1a365d;
-  color: #edf2f7;
+  background: #0f172a;
+  color: #f1f5f9;
   text-align: center;
-  padding: 20px;
+  padding: 22px 20px;
   margin-top: 40px;
   font-size: 0.95rem;
 }
@@ -294,7 +274,7 @@ footer p {
 }
 
 footer a {
-  color: #fbd38d;
+  color: #93c5fd;
   text-decoration: underline;
 }
 
@@ -303,18 +283,14 @@ footer a:focus {
   color: #ffffff;
 }
 
-/* ==========================================================================
-   Responsive Breakpoints
-   ========================================================================== */
-
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   .grid-gallery {
     grid-template-columns: 1fr;
   }
 
   nav ul {
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
   }
 
   nav a {

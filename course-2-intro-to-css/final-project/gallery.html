@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Grid</title>
+    <title>CSS Grid Gallery</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-    <a href="#main" class="skip-link">Skip to Main Content</a>
+    <a href="#main" class="skip-link skip">Skip to Main Content</a>
 
     <header>
       <nav aria-label="Main Navigation">
@@ -22,99 +21,109 @@
           <li><a href="hobbies.html">CSS Flex</a></li>
         </ul>
       </nav>
+      <h1>CSS Grid Gallery</h1>
     </header>
 
-    <main id="main">
+    <main id="main" tabindex="-1">
       <section>
-        <h2>This is an example of CSS Grid</h2>
+        <h2>Two-Column CSS Grid Layout</h2>
         <p>
-          Welcome to my photo gallery! This page displays my favorite personal
-          snapshots arranged using a
-          <strong>two-column CSS Grid</strong> layout (<code
-            >grid-template-columns: repeat(2, 1fr)</code
-          >). All images are styled using the
-          <strong>CSS Box Model</strong> (with custom border, padding, and
-          border-radius) and feature an interactive
-          <strong>hover transition</strong>.
+          This photo gallery demonstrates a
+          <strong>two-column CSS Grid</strong> layout configured using
+          <code>display: grid</code> and
+          <code>grid-template-columns: repeat(2, 1fr)</code>. Additional grid
+          properties such as <code>gap: 24px</code>,
+          <code>justify-items: center</code>, and
+          <code>align-items: stretch</code> are applied to the parent container.
+        </p>
+        <p>
+          Every image is styled using the <strong>CSS Box Model</strong> with
+          custom border, padding, and border-radius properties. When you hover
+          over any image, an interactive transition smoothly scales the image
+          and enhances its shadow depth.
         </p>
 
-        <!-- 2-Column Grid Container with 5 distinct images (Requirement 1, 5, 6, 8) -->
         <div class="grid-gallery">
           <div class="grid-item">
             <img
               src="images/cat.jpg"
               alt="Calico cat relaxing on a warm sunny morning"
             />
-            <p class="caption">Cute cat resting peacefully at my workplace</p>
+            <p class="caption">Cute cat resting peacefully at the workplace</p>
           </div>
 
           <div class="grid-item">
             <img
               src="images/coffee.jpg"
-              alt="Cup of freshly brewed iced coffee at Capital Coffee shop"
+              alt="Cup of freshly brewed iced coffee on a wooden table"
             />
-            <p class="caption">
-              Relaxing with a cup of coffee at Capital Coffee
-            </p>
+            <p class="caption">Enjoying a quiet moment with iced coffee</p>
           </div>
 
           <div class="grid-item">
             <img
               src="images/event.jpg"
-              alt="Crowd gathered outdoors on a bright day for a campus cultural event"
+              alt="Crowd gathered outdoors on a sunny day for a community event"
             />
-            <p class="caption">
-              Attending a memorable outdoor university event
-            </p>
+            <p class="caption">Attending a memorable outdoor gathering</p>
           </div>
 
           <div class="grid-item">
             <img
               src="images/training.jpg"
-              alt="Students lined up in formation during concentrated military training"
+              alt="Multi-story dormitory building and students during training"
             />
             <p class="caption">
-              Discipline and teamwork during military education
+              Discipline and focus during concentrated study
             </p>
           </div>
 
           <div class="grid-item">
             <img
               src="images/zoo.jpg"
-              alt="Lush green paths and trees during a weekend visit to the zoo"
+              alt="Green trees and pathways during a weekend visit to the city zoo"
             />
-            <p class="caption">
-              Exploring wildlife and nature at the zoo with friends
-            </p>
+            <p class="caption">Exploring wildlife and green landscapes</p>
+          </div>
+
+          <div class="grid-item">
+            <img
+              src="images/pagoda.jpg"
+              alt="Ornate pagoda gate with red lanterns under clear blue sky"
+            />
+            <p class="caption">Traditional architecture at Khanh Linh Pagoda</p>
           </div>
         </div>
       </section>
 
       <section>
-        <h2>Grid Layout Highlights</h2>
+        <h2>Grid Features Applied</h2>
         <ul class="features">
           <li>
-            <strong>Two Equal Columns:</strong> Configured via
+            <strong>Two-Column Layout:</strong> Multiple columns created via
             <code>grid-template-columns: repeat(2, 1fr)</code>.
           </li>
           <li>
-            <strong>Consistent Gap:</strong> Clean <code>24px</code> spacing
-            between all grid cards.
+            <strong>Additional Properties:</strong> Uses <code>gap: 24px</code>,
+            <code>row-gap: 24px</code>, <code>column-gap: 24px</code>,
+            <code>justify-items: center</code>, and
+            <code>align-items: stretch</code>.
           </li>
           <li>
-            <strong>Responsive:</strong> On smaller mobile screens, the grid
-            smoothly collapses into a single column.
+            <strong>Box Model Styling:</strong> All images use
+            <code>border: 5px solid #1e3a8a</code>, <code>padding: 8px</code>,
+            and <code>border-radius: 16px</code>.
           </li>
           <li>
-            <strong>Interactive Hover:</strong> Hovering over any image
-            initiates a gentle scale zoom with shadow depth.
+            <strong>Hover Transition:</strong> Images elevate and rotate subtly
+            using <code>transform: scale(1.06) rotate(1.5deg)</code> on hover.
           </li>
         </ul>
       </section>
     </main>
 
     <footer>
-      <p>Made by Phú</p>
+      <p>Created by Phú for Introduction to CSS3</p>
     </footer>
   </body>
 </html>

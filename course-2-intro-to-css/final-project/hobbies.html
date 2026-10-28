@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Flex</title>
+    <title>CSS Flex Showcase</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-    <a href="#main" class="skip-link">Skip to Main Content</a>
+    <a href="#main" class="skip-link skip">Skip to Main Content</a>
 
     <header>
       <nav aria-label="Main Navigation">
@@ -22,104 +21,108 @@
           </li>
         </ul>
       </nav>
+      <h1>CSS Flex Showcase</h1>
     </header>
 
-    <main id="main">
+    <main id="main" tabindex="-1">
       <section>
-        <h2>This is an example of CSS Flex</h2>
+        <h2>Flexible Card Showcase with Flexbox</h2>
         <p>
-          In my free time, I love balancing quiet moments like sipping iced
-          coffee or playing with cats with outdoor activities and trips with
-          friends. This page utilizes <strong>CSS Flexbox</strong> (<code
-            >display: flex</code
-          >, <code>flex-wrap: wrap</code>, and
-          <code>justify-content: space-around</code>) for flexible card
-          alignment.
+          This page utilizes <strong>CSS Flexbox</strong> to arrange cards
+          flexibly across rows using <code>display: flex</code>,
+          <code>flex-wrap: wrap</code>, and
+          <code>justify-content: space-around</code>. The flex cards adapt
+          gracefully to different screen dimensions.
         </p>
         <p>
-          Notice how every image alternates its corner styling using the
-          <strong><code>:nth-child</code> pseudo-class</strong>! Even-numbered
-          cards feature smooth top-left/bottom-right leaf curves with a green
-          border, while odd-numbered cards feature inverted curves with an
-          orange accent border.
+          Notice how the images alternate their styling using the
+          <strong><code>:nth-child</code> pseudo-class</strong>. Even-numbered
+          items feature asymmetrical leaf-like curves with a green border (<code
+            >border-radius: 36px 8px 36px 8px</code
+          >), while odd-numbered items feature inverted curves with a warm
+          orange border (<code>border-radius: 8px 36px 8px 36px</code>).
         </p>
 
-        <!-- Flexbox Container with Alternating :nth-child Styling (Requirement 5, 7, 8, 9) -->
         <div class="flex-gallery">
           <div class="flex-item">
             <img
               src="images/coffee.jpg"
-              alt="Cold iced brew coffee on a wooden table at Capital Coffee"
+              alt="Iced brew coffee served on a wooden table"
             />
-            <p class="caption">
-              <strong>Hobby 1: Coffee Culture</strong> — Finding peaceful spaces
-              to read and recharge.
-            </p>
+            <p class="caption">Quiet afternoon with a cup of coffee</p>
           </div>
 
           <div class="flex-item">
             <img
               src="images/cat.jpg"
-              alt="Sleeping calico cat curled up on a warm spot"
+              alt="Sleeping calico cat curled up comfortably"
             />
-            <p class="caption">
-              <strong>Hobby 2: Cat Care</strong> — Spending time petting and
-              taking care of lovely feline friends.
-            </p>
+            <p class="caption">Caring for friendly cats</p>
           </div>
 
           <div class="flex-item">
             <img
               src="images/zoo.jpg"
-              alt="Scenic pathway through the green trees and animal enclosures at the zoo"
+              alt="Scenic pathway through green trees at the city zoo"
             />
-            <p class="caption">
-              <strong>Hobby 3: Weekend Walks</strong> — Exploring nature parks
-              and visiting the city zoo.
-            </p>
+            <p class="caption">Walking through nature parks</p>
           </div>
 
           <div class="flex-item">
             <img
               src="images/event.jpg"
-              alt="Vibrant atmosphere of students and guests participating in outdoor activities"
+              alt="Students and guests participating in outdoor community events"
             />
-            <p class="caption">
-              <strong>Hobby 4: Community Events</strong> — Engaging in campus
-              festivals and outdoor sports.
-            </p>
+            <p class="caption">Community activities and gatherings</p>
+          </div>
+
+          <div class="flex-item">
+            <img
+              src="images/pagoda.jpg"
+              alt="Peaceful courtyard of Khanh Linh Pagoda"
+            />
+            <p class="caption">Visiting sacred cultural landmarks</p>
+          </div>
+
+          <div class="flex-item">
+            <img
+              src="images/training.jpg"
+              alt="Campus dormitory facilities under a clear sky"
+            />
+            <p class="caption">Student campus memories</p>
           </div>
         </div>
       </section>
 
       <section>
-        <h2>CSS Techniques Demonstrated</h2>
+        <h2>CSS Flex &amp; Selector Highlights</h2>
         <ul class="features">
           <li>
-            <strong>Flexbox Distribution:</strong> Cards flex responsively
-            across rows via <code>display: flex</code> and
-            <code>flex-wrap: wrap</code>.
+            <strong>Flexbox Distribution:</strong> Cards wrap and distribute
+            evenly using <code>display: flex</code>,
+            <code>flex-wrap: wrap</code>, and
+            <code>justify-content: space-around</code>.
           </li>
           <li>
-            <strong>Advanced <code>:nth-child</code> Selectors:</strong>
-            <code>:nth-child(even)</code> and <code>:nth-child(odd)</code> give
-            each consecutive image an artistic, alternating leaf-shaped
-            border-radius and unique border color.
+            <strong>Advanced <code>:nth-child</code> Styling:</strong> Even
+            items use <code>:nth-child(even)</code> for green leaf border
+            curves, while odd items use <code>:nth-child(odd)</code> for orange
+            border curves.
           </li>
           <li>
-            <strong>Box Model:</strong> Every image applies <code>border</code>,
-            <code>padding</code>, and custom <code>border-radius</code>.
+            <strong>Box Model Applied:</strong> Every image maintains border,
+            padding, and border-radius.
           </li>
           <li>
-            <strong>Interactive Transitions:</strong> Smooth zoom and shadow
-            expansion on <code>:hover</code>.
+            <strong>Interactive Hover Effect:</strong> Hovering over any image
+            triggers a dynamic zoom, tilt, and shadow expansion.
           </li>
         </ul>
       </section>
     </main>
 
     <footer>
-      <p>Made by Phú</p>
+      <p>Created by Phú for Introduction to CSS3</p>
     </footer>
   </body>
 </html>

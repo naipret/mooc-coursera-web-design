@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Home - Personal Journey</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-    <a href="#main" class="skip-link">Skip to Main Content</a>
+    <a href="#main" class="skip-link skip">Skip to Main Content</a>
 
     <header>
       <nav aria-label="Main Navigation">
@@ -20,50 +19,57 @@
           <li><a href="hobbies.html">CSS Flex</a></li>
         </ul>
       </nav>
+      <h1>Welcome to My Website</h1>
     </header>
 
-    <main id="main">
+    <main id="main" tabindex="-1">
       <section>
-        <h2>Welcome to My Website</h2>
+        <h2>About Me and This Project</h2>
         <p>
           Hello! My name is <strong>Phú</strong>, and I am from Vietnam. This
           website was created as the Final Project for the
           <em>Introduction to CSS3</em> course in the Web Design for Everybody
-          Specialization. Here, I showcase some of my favorite moments, daily
-          memories, and personal interests.
+          Specialization.
+        </p>
+        <p>
+          Through this project, I have practiced applying fundamental CSS
+          concepts including the CSS box model, positioning, accessible
+          navigation, CSS Grid, and CSS Flexbox. Each page demonstrates
+          different styling methods and responsive layouts.
         </p>
 
-        <p>
-          I have a deep passion for technology, photography with my smartphone,
-          exploring peaceful coffee spots, and taking care of cats. Feel free to
-          browse through the photo galleries using the links above to see
-          different CSS layouts in action!
-        </p>
+        <div class="featured-image-wrapper">
+          <img
+            src="images/pagoda.jpg"
+            alt="Traditional curved roof and ornate entrance gate of Khanh Linh Pagoda"
+          />
+          <p class="caption">A peaceful morning visit to Khanh Linh Pagoda</p>
+        </div>
       </section>
 
       <section>
-        <h2>Daily Tech & Gadgets</h2>
-        <ol class="devices">
-          <li><strong>Laptop:</strong> Lenovo ThinkBook 14 G7+ AKP</li>
-          <li><strong>Phone:</strong> Google Pixel 8</li>
-          <li><strong>Smartwatch:</strong> Google Pixel Watch 2 LTE</li>
-          <li><strong>Earbuds:</strong> Google Pixel Buds Pro 2</li>
-        </ol>
-      </section>
-
-      <section>
-        <h2>Explore More</h2>
+        <h2>What You Can Explore</h2>
         <p>
-          Check out the <a href="gallery.html">CSS Grid</a> to see a 2-column
-          CSS Grid showcase, or visit the <a href="hobbies.html">CSS Flex</a> to
-          see a responsive CSS Flex layout with alternating styles using
-          <code>:nth-child</code>!
+          I invite you to explore the other pages of this site to see different
+          CSS layout techniques in action:
         </p>
+        <ul class="features">
+          <li>
+            Visit the <a href="gallery.html">CSS Grid Gallery</a> to see a
+            two-column grid layout displaying photos styled with the box model
+            and interactive hover transitions.
+          </li>
+          <li>
+            Visit the <a href="hobbies.html">CSS Flex Showcase</a> to explore
+            responsive flexbox distribution with alternating corner styles
+            powered by the <code>:nth-child</code> selector.
+          </li>
+        </ul>
       </section>
     </main>
 
     <footer>
-      <p>Made by Phú</p>
+      <p>Created by Phú for Introduction to CSS3</p>
     </footer>
   </body>
 </html>
