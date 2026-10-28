@@ -23,7 +23,7 @@ h1 {
   border: 5px solid #000000;
   margin: 0 auto;
   background-color: #8e68ff;
-  background-image: url('');
+  background-image: url("");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -38,7 +38,9 @@ h1 {
   margin-left: 17%;
   border: 10px solid #000000;
   cursor: pointer;
-  transition: opacity 0.2s, transform 0.2s;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
 }
 
 .preview:hover {
