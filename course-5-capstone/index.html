@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio of Nguyen Van Phu, Software Engineering student at FPT University. Capstone project for the Coursera Web Design for Everybody Specialization."
+    />
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-link">
+          <span>My Portfolio</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main Navigation">
+          <ul class="nav-menu" id="nav-menu">
+            <li>
+              <a href="index.html" class="nav-link" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="skills.html" class="nav-link">Skills</a>
+            </li>
+            <li>
+              <a href="projects.html" class="nav-link">Projects</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav-actions">
+            <button
+              type="button"
+              id="theme-toggle"
+              class="btn-icon"
+              aria-label="Switch theme"
+              title="Switch theme"
+            >
+              Theme
+            </button>
+
+            <button
+              type="button"
+              id="nav-toggle"
+              class="btn-icon nav-toggle"
+              aria-expanded="false"
+              aria-controls="nav-menu"
+              aria-label="Open navigation menu"
+            >
+              Menu
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <h1 id="hero-title">Nguyen Van Phu</h1>
+          <p class="lead">Software Engineering student at FPT University.</p>
+
+          <div class="hero-meta">
+            <span class="meta-badge">FPT University</span>
+            <span class="meta-badge"
+              >University of Michigan Specialization</span
+            >
+          </div>
+
+          <p>
+            This website serves as the final Capstone project for the Web Design
+            for Everybody Specialization from the University of Michigan on
+            Coursera. The implementation demonstrates semantic HTML5 markup,
+            responsive layouts using CSS Grid and Flexbox, and client-side
+            JavaScript interactivity without external frameworks.
+          </p>
+
+          <div style="display: flex; gap: 0.75rem; margin-top: 1.25rem">
+            <a href="projects.html" class="btn btn-primary">Browse Projects</a>
+            <a href="about.html" class="btn btn-secondary">Read Background</a>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div class="stat-value">2,100+</div>
+              <div class="stat-label">GitHub Commits</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">46</div>
+              <div class="stat-label">Pull Requests Opened</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">23</div>
+              <div class="stat-label">Public Repositories</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">5</div>
+              <div class="stat-label">Specialization Courses</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="specialization-heading">
+        <div class="container">
+          <div class="page-title-block">
+            <h2 id="specialization-heading">
+              Web Design Specialization Progression
+            </h2>
+            <p>
+              The curriculum progresses from baseline document structure to
+              multi-platform responsive styling.
+            </p>
+          </div>
+
+          <div class="grid-cards">
+            <article class="card">
+              <h3 class="card-title">Course 1: Introduction to HTML5</h3>
+              <p class="card-body">
+                Structured document outlines using semantic elements, accessible
+                tables, image attributes, and W3C validation compliance.
+              </p>
+              <div class="card-footer">
+                <span class="tag">HTML5</span>
+                <a href="../course-1-intro-to-html/index.html"
+                  >Coursework Link</a
+                >
+              </div>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">Course 2: Introduction to CSS3</h3>
+              <p class="card-body">
+                Applied CSS box models, relative and absolute positioning,
+                multi-column page arrangements, and accessible skip links.
+              </p>
+              <div class="card-footer">
+                <span class="tag">CSS3</span>
+                <a href="../course-2-intro-to-css/final-project/index.html"
+                  >Coursework Link</a
+                >
+              </div>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">
+                Course 3: Interactivity with JavaScript
+              </h3>
+              <p class="card-body">
+                Implemented event listeners for keyboard focus, blur, and
+                mouseover triggers to update DOM nodes dynamically.
+              </p>
+              <div class="card-footer">
+                <span class="tag">JavaScript</span>
+                <a href="../course-3-inter-with-js/final-project/index.html"
+                  >Coursework Link</a
+                >
+              </div>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">Course 4: Advanced Styling</h3>
+              <p class="card-body">
+                Constructed fluid layouts via media queries, CSS Grid, user
+                preference detection for reduced motion, and dark mode themes.
+              </p>
+              <div class="card-footer">
+                <span class="tag">Responsive</span>
+                <a href="../course-4-adv-styling/final-project/index.html"
+                  >Coursework Link</a
+                >
+              </div>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">Course 5: Capstone Project</h3>
+              <p class="card-body">
+                Integrated all specialization outcomes into a multi-page website
+                meeting WCAG 2.1 AA accessibility and cross-device responsive
+                standards.
+              </p>
+              <div class="card-footer">
+                <span class="tag">Capstone</span>
+                <a href="docs/wireframes.html">Wireframe Specs</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">Photography Gallery</h3>
+              <p class="card-body">
+                Dedicated responsive showcase containing personal photographs
+                captured during academic activities, city excursions, and quiet
+                sessions.
+              </p>
+              <div class="card-footer">
+                <span class="tag">Media</span>
+                <a href="gallery.html">Open Gallery</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="docs/wireframes.html">Wireframes</a></li>
+        </ul>
+
+        <div class="footer-bottom">
+          <p>
+            Built for the University of Michigan Web Design for Everybody
+            Specialization.
+          </p>
+          <p><a href="#main-content">Back to Top</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

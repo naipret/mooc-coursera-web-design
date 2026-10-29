@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography Gallery</title>
+    <meta
+      name="description"
+      content="Photographs captured by Nguyen Van Phu documenting campus activities, architecture, nature, and everyday sessions."
+    />
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-link">
+          <span>My Portfolio</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main Navigation">
+          <ul class="nav-menu" id="nav-menu">
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="skills.html" class="nav-link">Skills</a>
+            </li>
+            <li>
+              <a href="projects.html" class="nav-link">Projects</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="nav-link" aria-current="page"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav-actions">
+            <button
+              type="button"
+              id="theme-toggle"
+              class="btn-icon"
+              aria-label="Switch theme"
+              title="Switch theme"
+            >
+              Theme
+            </button>
+
+            <button
+              type="button"
+              id="nav-toggle"
+              class="btn-icon nav-toggle"
+              aria-expanded="false"
+              aria-controls="nav-menu"
+              aria-label="Open navigation menu"
+            >
+              Menu
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="section">
+        <div class="container">
+          <div class="page-title-block">
+            <h1>Photography Gallery</h1>
+            <p class="lead">
+              Original photographs captured during university training courses,
+              city excursions, and weekend sessions.
+            </p>
+          </div>
+
+          <p>
+            The images displayed below were originally curated and styled in
+            Course 3 and Course 4 of the Web Design Specialization to test
+            responsive image loading, semantic figure formatting, and keyboard
+            accessible focus states.
+          </p>
+
+          <div class="gallery-grid" style="margin-top: 2rem">
+            <figure class="gallery-figure">
+              <div class="gallery-img-container">
+                <img
+                  src="images/pagoda.jpg"
+                  alt="Festive entrance gate and traditional curved roof architecture of Khanh Linh Pagoda"
+                  class="gallery-img"
+                  width="400"
+                  height="250"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption class="gallery-caption">
+                <h2 class="gallery-caption-title">Khanh Linh Pagoda Gate</h2>
+                <p class="gallery-caption-text">
+                  Festive entrance gate and ornate roof architecture of Khanh
+                  Linh Pagoda photographed under clear morning skies.
+                </p>
+                <div class="gallery-caption-meta">
+                  Subject: Architecture and Cultural Heritage
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-figure">
+              <div class="gallery-img-container">
+                <img
+                  src="images/training.jpg"
+                  alt="Low-angle view of pastel yellow student residential dormitories under an open sky"
+                  class="gallery-img"
+                  width="400"
+                  height="250"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption class="gallery-caption">
+                <h2 class="gallery-caption-title">Student Dormitories</h2>
+                <p class="gallery-caption-text">
+                  Residential quarters captured during undergraduate military
+                  and soft-skills training sessions at the university campus.
+                </p>
+                <div class="gallery-caption-meta">
+                  Subject: Campus Architecture
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-figure">
+              <div class="gallery-img-container">
+                <img
+                  src="images/event.jpg"
+                  alt="Independence Palace front facade and courtyard lawn with fluttering red flags"
+                  class="gallery-img"
+                  width="400"
+                  height="250"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption class="gallery-caption">
+                <h2 class="gallery-caption-title">
+                  Independence Palace Courtyard
+                </h2>
+                <p class="gallery-caption-text">
+                  Open grass lawn and landmark facade adorned with national
+                  banners during an afternoon city tour.
+                </p>
+                <div class="gallery-caption-meta">
+                  Subject: City and History
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-figure">
+              <div class="gallery-img-container">
+                <img
+                  src="images/zoo.jpg"
+                  alt="Green and brown iguanas resting together on lawn grass under tree branches"
+                  class="gallery-img"
+                  width="400"
+                  height="250"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption class="gallery-caption">
+                <h2 class="gallery-caption-title">Botanical Garden Fauna</h2>
+                <p class="gallery-caption-text">
+                  Green and brown iguanas resting in shaded ground plots at the
+                  zoological and botanical garden.
+                </p>
+                <div class="gallery-caption-meta">
+                  Subject: Wildlife and Nature
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-figure">
+              <div class="gallery-img-container">
+                <img
+                  src="images/coffee.jpg"
+                  alt="Freshly brewed coffee cup on wooden table alongside an open notebook and workspace"
+                  class="gallery-img"
+                  width="400"
+                  height="250"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption class="gallery-caption">
+                <h2 class="gallery-caption-title">Study Workspace</h2>
+                <p class="gallery-caption-text">
+                  Coffee cup and notebook arranged for a quiet development and
+                  reading session.
+                </p>
+                <div class="gallery-caption-meta">
+                  Subject: Everyday Still Life
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-figure">
+              <div class="gallery-img-container">
+                <img
+                  src="images/cat.jpg"
+                  alt="Domestic cat curled up asleep on a soft indoor surface"
+                  class="gallery-img"
+                  width="400"
+                  height="250"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption class="gallery-caption">
+                <h2 class="gallery-caption-title">Resting Domestic Cat</h2>
+                <p class="gallery-caption-text">
+                  Domestic pet resting indoors, captured as a reference subject
+                  for image sizing and contrast tests.
+                </p>
+                <div class="gallery-caption-meta">
+                  Subject: Domestic Animals
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="docs/wireframes.html">Wireframes</a></li>
+        </ul>
+
+        <div class="footer-bottom">
+          <p>
+            Built for the University of Michigan Web Design for Everybody
+            Specialization.
+          </p>
+          <p><a href="#main-content">Back to Top</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

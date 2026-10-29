@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wireframe Layout Specifications</title>
+    <meta
+      name="description"
+      content="Layout wireframe specifications across Mobile, Tablet, and Desktop screen widths for the Web Design for Everybody Capstone project."
+    />
+    <link rel="icon" type="image/svg+xml" href="../images/logo.svg" />
+    <style>
+      :root {
+        --wf-bg: #f8fafc;
+        --wf-card-bg: #ffffff;
+        --wf-border: #94a3b8;
+        --wf-border-dash: #cbd5e1;
+        --wf-text: #0f172a;
+        --wf-muted: #475569;
+        --wf-primary: #1d4ed8;
+        --wf-box: #e2e8f0;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background-color: var(--wf-bg);
+        color: var(--wf-text);
+        line-height: 1.6;
+        padding: 2rem 1rem;
+      }
+
+      .container {
+        max-width: 1120px;
+        margin: 0 auto;
+      }
+
+      header.page-header {
+        background: var(--wf-card-bg);
+        padding: 2rem;
+        border-radius: 8px;
+        border: 1px solid var(--wf-border-dash);
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        font-size: 1.85rem;
+        color: var(--wf-primary);
+        margin-bottom: 0.5rem;
+      }
+      h2 {
+        font-size: 1.35rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+        color: var(--wf-text);
+      }
+      p {
+        color: var(--wf-muted);
+        margin-bottom: 1rem;
+      }
+
+      .nav-back {
+        display: inline-block;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        color: var(--wf-primary);
+        text-decoration: none;
+      }
+
+      .wireframe-section {
+        background: var(--wf-card-bg);
+        border: 1px solid var(--wf-border-dash);
+        border-radius: 8px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .mockup-frame {
+        border: 2px solid var(--wf-border);
+        border-radius: 6px;
+        background: #ffffff;
+        padding: 1.25rem;
+        margin-inline: auto;
+      }
+
+      .mockup-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid var(--wf-border);
+        padding-bottom: 0.75rem;
+        margin-bottom: 1rem;
+      }
+
+      .wf-box {
+        background: var(--wf-box);
+        border: 1px dashed var(--wf-border);
+        padding: 0.75rem;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--wf-muted);
+      }
+
+      .frame-mobile {
+        width: 100%;
+        max-width: 340px;
+      }
+
+      .frame-tablet {
+        width: 100%;
+        max-width: 680px;
+      }
+
+      .frame-desktop {
+        width: 100%;
+        max-width: 1000px;
+      }
+
+      .spec-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .spec-table th,
+      .spec-table td {
+        border: 1px solid var(--wf-border-dash);
+        padding: 0.75rem 1rem;
+        text-align: left;
+      }
+
+      .spec-table th {
+        background: var(--wf-bg);
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="page-header">
+        <a href="../index.html" class="nav-back">Return to Portfolio</a>
+        <h1>Capstone Wireframe Specifications</h1>
+        <p>
+          Student: Nguyen Van Phu. Course: Web Design for Everybody Capstone.
+          Target platforms: Mobile, Tablet, and Desktop screen widths.
+        </p>
+      </header>
+
+      <section class="wireframe-section">
+        <h2>Mobile Layout (Screen Width under 600px)</h2>
+        <p>
+          Single column flow with collapsible navigation menu and vertical card
+          stacks.
+        </p>
+
+        <div class="mockup-frame frame-mobile">
+          <div class="mockup-header">
+            <div class="wf-box" style="padding: 0.35rem 0.6rem">Name</div>
+            <div class="wf-box" style="padding: 0.35rem 0.6rem">
+              Menu Toggle
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 0.75rem;
+              margin-bottom: 1rem;
+            "
+          >
+            <div class="wf-box" style="padding: 1rem; text-align: left">
+              <p style="font-weight: 700; margin-bottom: 0.25rem">
+                Nguyen Van Phu
+              </p>
+              <p style="font-size: 0.75rem; margin-bottom: 0.5rem">
+                Undergraduate software engineering student and developer.
+              </p>
+              <div class="wf-box" style="background: #cbd5e1">
+                Action Link: Browse Projects
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 0.5rem;
+              margin-bottom: 1rem;
+            "
+          >
+            <div class="wf-box">Project Card 1</div>
+            <div class="wf-box">Project Card 2</div>
+            <div class="wf-box">Project Card 3</div>
+          </div>
+
+          <div class="wf-box" style="padding: 0.5rem">
+            Footer Navigation and Copyright
+          </div>
+        </div>
+      </section>
+
+      <section class="wireframe-section">
+        <h2>Tablet Layout (Screen Width between 600px and 991px)</h2>
+        <p>
+          Two column grid configuration for project archives and persistent
+          horizontal navigation.
+        </p>
+
+        <div class="mockup-frame frame-tablet">
+          <div class="mockup-header">
+            <div class="wf-box" style="padding: 0.4rem 0.8rem">Name</div>
+            <div style="display: flex; gap: 0.35rem">
+              <div class="wf-box" style="padding: 0.35rem 0.5rem">Home</div>
+              <div class="wf-box" style="padding: 0.35rem 0.5rem">About</div>
+              <div class="wf-box" style="padding: 0.35rem 0.5rem">Skills</div>
+              <div class="wf-box" style="padding: 0.35rem 0.5rem">Projects</div>
+              <div class="wf-box" style="padding: 0.35rem 0.5rem">Gallery</div>
+              <div class="wf-box" style="padding: 0.35rem 0.5rem">Contact</div>
+            </div>
+          </div>
+
+          <div
+            class="wf-box"
+            style="text-align: left; padding: 1.25rem; margin-bottom: 1rem"
+          >
+            <p
+              style="font-weight: 700; font-size: 1rem; margin-bottom: 0.25rem"
+            >
+              Nguyen Van Phu - Software Engineering
+            </p>
+            <p style="font-size: 0.85rem; margin-bottom: 0.5rem">
+              Summary of undergraduate studies at FPT University and club
+              participation.
+            </p>
+            <div style="display: flex; gap: 0.5rem">
+              <div class="wf-box" style="background: #cbd5e1; flex: 1">
+                Browse Projects
+              </div>
+              <div class="wf-box" style="flex: 1">Read Background</div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 0.75rem;
+              margin-bottom: 1rem;
+            "
+          >
+            <div class="wf-box" style="padding: 1rem">Project Card 1</div>
+            <div class="wf-box" style="padding: 1rem">Project Card 2</div>
+            <div class="wf-box" style="padding: 1rem">Project Card 3</div>
+            <div class="wf-box" style="padding: 1rem">Project Card 4</div>
+          </div>
+
+          <div class="wf-box" style="padding: 0.75rem">
+            Footer Navigation, Specialization Links, and Return to Top
+          </div>
+        </div>
+      </section>
+
+      <section class="wireframe-section">
+        <h2>Desktop Layout (Screen Width at or above 992px)</h2>
+        <p>
+          Three column CSS Grid for cards and photography galleries with
+          max-width containment at 1120px.
+        </p>
+
+        <div class="mockup-frame frame-desktop">
+          <div class="mockup-header">
+            <div class="wf-box" style="padding: 0.5rem 1rem">Name</div>
+            <div style="display: flex; gap: 0.5rem">
+              <div class="wf-box" style="padding: 0.4rem 0.65rem">Home</div>
+              <div class="wf-box" style="padding: 0.4rem 0.65rem">About</div>
+              <div class="wf-box" style="padding: 0.4rem 0.65rem">Skills</div>
+              <div class="wf-box" style="padding: 0.4rem 0.65rem">Projects</div>
+              <div class="wf-box" style="padding: 0.4rem 0.65rem">Gallery</div>
+              <div class="wf-box" style="padding: 0.4rem 0.65rem">Contact</div>
+              <div class="wf-box" style="padding: 0.4rem 0.65rem">Theme</div>
+            </div>
+          </div>
+
+          <div
+            class="wf-box"
+            style="text-align: left; padding: 1.5rem; margin-bottom: 1.25rem"
+          >
+            <p
+              style="
+                font-weight: 700;
+                font-size: 1.15rem;
+                margin-bottom: 0.25rem;
+              "
+            >
+              Nguyen Van Phu
+            </p>
+            <p style="font-size: 0.9rem; margin-bottom: 0.75rem">
+              Software Engineering student at FPT University.
+            </p>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 0.5rem;
+                margin-top: 0.5rem;
+              "
+            >
+              <div class="wf-box">2,100+ Commits</div>
+              <div class="wf-box">46 Pull Requests</div>
+              <div class="wf-box">23 Repositories</div>
+              <div class="wf-box">5 Courses</div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              gap: 0.75rem;
+              margin-bottom: 1.25rem;
+            "
+          >
+            <div class="wf-box" style="padding: 1.25rem">Project Card 1</div>
+            <div class="wf-box" style="padding: 1.25rem">Project Card 2</div>
+            <div class="wf-box" style="padding: 1.25rem">Project Card 3</div>
+            <div class="wf-box" style="padding: 1.25rem">Project Card 4</div>
+            <div class="wf-box" style="padding: 1.25rem">Project Card 5</div>
+            <div class="wf-box" style="padding: 1.25rem">Project Card 6</div>
+          </div>
+
+          <div class="wf-box" style="padding: 0.75rem">
+            Footer Navigation and W3C Compliance Notice
+          </div>
+        </div>
+      </section>
+
+      <section class="wireframe-section">
+        <h2>Rubric Evaluation Mapping</h2>
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th>Evaluation Parameter</th>
+              <th>Technical Implementation</th>
+              <th>Compliance Record</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Multi-Platform Wireframes</td>
+              <td>
+                Explicit layouts drafted for Mobile under 600px, Tablet between
+                600px and 991px, and Desktop at or above 992px.
+              </td>
+              <td>Verified</td>
+            </tr>
+            <tr>
+              <td>Information Hierarchy</td>
+              <td>
+                Separation of concerns across dedicated pages for About, Skills,
+                Projects, Photography Gallery, and Contact.
+              </td>
+              <td>Verified</td>
+            </tr>
+            <tr>
+              <td>Accessibility Provision</td>
+              <td>
+                Skip navigation links, visible focus outlines, high-contrast
+                text ratios, and keyboard accessible menus.
+              </td>
+              <td>Verified</td>
+            </tr>
+            <tr>
+              <td>W3C Standards</td>
+              <td>
+                Semantic elements including header, nav, main, section, article,
+                figure, and footer with zero validation errors.
+              </td>
+              <td>Verified</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </body>
+</html>

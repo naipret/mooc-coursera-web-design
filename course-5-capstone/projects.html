@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <meta
+      name="description"
+      content="Technical projects developed by Nguyen Van Phu across backend engineering, academic coursework, NAF Studio operations, and web development."
+    />
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-link">
+          <span>My Portfolio</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main Navigation">
+          <ul class="nav-menu" id="nav-menu">
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="skills.html" class="nav-link">Skills</a>
+            </li>
+            <li>
+              <a href="projects.html" class="nav-link" aria-current="page"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav-actions">
+            <button
+              type="button"
+              id="theme-toggle"
+              class="btn-icon"
+              aria-label="Switch theme"
+              title="Switch theme"
+            >
+              Theme
+            </button>
+
+            <button
+              type="button"
+              id="nav-toggle"
+              class="btn-icon nav-toggle"
+              aria-expanded="false"
+              aria-controls="nav-menu"
+              aria-label="Open navigation menu"
+            >
+              Menu
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="section">
+        <div class="container">
+          <div class="page-title-block">
+            <h1>Project Portfolio</h1>
+            <p class="lead">
+              Verified repositories covering backend services, university
+              coursework, NAF Studio infrastructure, and the Web Design
+              Specialization.
+            </p>
+          </div>
+
+          <div
+            class="filter-bar"
+            role="toolbar"
+            aria-label="Project category filters"
+          >
+            <button
+              type="button"
+              class="filter-btn"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All Projects
+            </button>
+            <button
+              type="button"
+              class="filter-btn"
+              data-filter="web"
+              aria-pressed="false"
+            >
+              Web Specialization
+            </button>
+            <button
+              type="button"
+              class="filter-btn"
+              data-filter="academic"
+              aria-pressed="false"
+            >
+              Academic
+            </button>
+            <button
+              type="button"
+              class="filter-btn"
+              data-filter="naf"
+              aria-pressed="false"
+            >
+              NAF Studio
+            </button>
+          </div>
+
+          <p id="filter-status" class="visually-hidden" aria-live="polite">
+            Showing all 11 projects.
+          </p>
+
+          <div class="grid-cards" id="projects-grid">
+            <article class="card project-item" data-category="academic">
+              <h2 class="card-title">Movie Streaming Management System</h2>
+              <p class="card-body">
+                Console-based movie streaming administration platform built for
+                F-Code Club using pure Java 8, a layered MVC architecture, and
+                Gang of Four design patterns.
+              </p>
+              <ul class="card-tags">
+                <li class="tag">Java 8</li>
+                <li class="tag">MVC Pattern</li>
+                <li class="tag">GoF Patterns</li>
+              </ul>
+              <div class="card-footer">
+                <a
+                  href="https://github.com/naipret/fcode-becrew-movie-streaming-management"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Repository</a
+                >
+              </div>
+            </article>
+
+            <article class="card project-item" data-category="academic">
+              <h2 class="card-title">Retail Food Store Management</h2>
+              <p class="card-body">
+                Console retail inventory application developed for the PRO192
+                course at FPT University, managing stock levels and
+                transactional processing in pure Java SE 8.
+              </p>
+              <ul class="card-tags">
+                <li class="tag">Java SE 8</li>
+                <li class="tag">FPT University</li>
+                <li class="tag">PRO192</li>
+              </ul>
+              <div class="card-footer">
+                <a
+                  href="https://github.com/naipret/fptu-pro192-food-store-management"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Repository</a
+                >
+              </div>
+            </article>
+
+            <article class="card project-item" data-category="academic">
+              <h2 class="card-title">Game Account Marketplace</h2>
+              <p class="card-body">
+                Web service developed with Spring Boot 3.5.0 and Java 17
+                implementing authentication, account cataloging, and order
+                management endpoints.
+              </p>
+              <ul class="card-tags">
+                <li class="tag">Spring Boot 3</li>
+                <li class="tag">Java 17</li>
+                <li class="tag">REST API</li>
+              </ul>
+              <div class="card-footer">
+                <a
+                  href="https://github.com/naipret/fcode-challenge3-game-account-shop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Repository</a
+                >
+              </div>
+            </article>
+
+            <article class="card project-item" data-category="academic">
+              <h2 class="card-title">F-Code Violation Management</h2>
+              <p class="card-body">
+                Member tracking utility for F-Code Club written in C for
+                terminal execution, handling rule violation logging and record
+                audits.
+              </p>
+              <ul class="card-tags">
+                <li class="tag">C</li>
+                <li class="tag">CLI</li>
+                <li class="tag">Data Structures</li>
+              </ul>
+              <div class="card-footer">
+                <a
+                  href="https://github.com/naipret/fcode-trainc-violation-management"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Repository</a
+                >
+              </div>
+            </article>
+
+            <article class="card project-item" data-category="naf">
+              <h2 class="card-title">NAFMC Server Infrastructure</h2>
+              <p class="card-body">
+                Production server configurations, deployment scripts, and Docker
+                Compose definitions for Paper and LeafMC servers with Geyser and
+                Floodgate integration.
+              </p>
+              <ul class="card-tags">
+                <li class="tag">Docker Compose</li>
+                <li class="tag">Linux</li>
+                <li class="tag">LeafMC</li>
+              </ul>
+              <div class="card-footer">
+                <a
+                  href="https://github.com/naf-studio/minecraft-server"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Repository</a
+                >
+              </div>
+            </article>
+
+            <article class="card project-item" data-category="naf">
+              <h2 class="card-title">FirstJoinRTP Paper Plugin</h2>
+              <p class="card-body">
+                Lightweight server extension for Bukkit and Paper engines
+                providing safe random teleportation coordinate resolution and
+                spawnpoint establishment.
+              </p>
+              <ul class="card-tags">
+                <li class="tag">Java</li>
+                <li class="tag">Paper API</li>
+                <li class="tag">Plugin Development</li>
+              </ul>
+              <div class="card-footer">
+                <a
+                  href="https://github.com/naf-studio/firstjoinrtp-plugin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Repository</a
+                >
+              </div>
+            </article>
+
+            <article class="card project-item" data-category="naf">
+              <h2 class="card-title">NAF Studio Automation Bot</h2>
+              <p class="card-body">
+                Automation bot written in Python using
+                <code>discord.py</code> to manage player role assignments,
+                server status checks, and community telemetry.
+              </p>
+              <ul class="card-tags">
+                <li class="tag">Python</li>
+                <li class="tag">discord.py</li>
+                <li class="tag">Asyncio</li>
+              </ul>
+              <div class="card-footer">
+                <a
+                  href="https://github.com/naf-studio/discord-bot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Repository</a
+                >
+              </div>
+            </article>
+
+            <article class="card project-item" data-category="web">
+              <h2 class="card-title">Course 4: Responsive Design</h2>
+              <p class="card-body">
+                Photo showcase implementing CSS Grid layouts, fluid media
+                queries across three breakpoints, reduced motion settings, and
+                dark mode styles.
+              </p>
+              <ul class="card-tags">
+                <li class="tag">CSS Grid</li>
+                <li class="tag">Media Queries</li>
+                <li class="tag">Accessibility</li>
+              </ul>
+              <div class="card-footer">
+                <a href="../course-4-adv-styling/final-project/index.html"
+                  >Course 4 Demo</a
+                >
+              </div>
+            </article>
+
+            <article class="card project-item" data-category="web">
+              <h2 class="card-title">Course 3: JavaScript Interactivity</h2>
+              <p class="card-body">
+                Interactive photo viewer using JavaScript event listeners for
+                keyboard focus, blur, and mouseover triggers to update visual
+                attributes and text captions.
+              </p>
+              <ul class="card-tags">
+                <li class="tag">JavaScript</li>
+                <li class="tag">DOM API</li>
+                <li class="tag">Event Listeners</li>
+              </ul>
+              <div class="card-footer">
+                <a href="../course-3-inter-with-js/final-project/index.html"
+                  >Course 3 Demo</a
+                >
+              </div>
+            </article>
+
+            <article class="card project-item" data-category="web">
+              <h2 class="card-title">Course 2: CSS3 Box Model and Layout</h2>
+              <p class="card-body">
+                Multi-column website layout practicing CSS box model properties,
+                flexible box arrangements, skip navigation, and styling rules.
+              </p>
+              <ul class="card-tags">
+                <li class="tag">CSS3</li>
+                <li class="tag">Flexbox</li>
+                <li class="tag">Skip Link</li>
+              </ul>
+              <div class="card-footer">
+                <a href="../course-2-intro-to-css/final-project/index.html"
+                  >Course 2 Demo</a
+                >
+              </div>
+            </article>
+
+            <article class="card project-item" data-category="web">
+              <h2 class="card-title">Course 1: Semantic HTML5 Structure</h2>
+              <p class="card-body">
+                Baseline personal document markup following semantic HTML5
+                structure, element hierarchy, table formatting, and W3C
+                validation compliance.
+              </p>
+              <ul class="card-tags">
+                <li class="tag">HTML5</li>
+                <li class="tag">Semantics</li>
+                <li class="tag">W3C Validation</li>
+              </ul>
+              <div class="card-footer">
+                <a href="../course-1-intro-to-html/index.html">Course 1 Demo</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="docs/wireframes.html">Wireframes</a></li>
+        </ul>
+
+        <div class="footer-bottom">
+          <p>
+            Built for the University of Michigan Web Design for Everybody
+            Specialization.
+          </p>
+          <p><a href="#main-content">Back to Top</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
